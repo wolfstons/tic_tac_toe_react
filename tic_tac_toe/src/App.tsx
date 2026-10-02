@@ -2,6 +2,7 @@ import Tabla from './component/Tabla'
 import { useState } from 'react'
 
 import './App.css'
+import JatekAllas from './component/jatekAllas'
 
 
 function App() {
@@ -31,9 +32,10 @@ function App() {
     <>    
     <main>
     <header>
-      <h1>Welcome to the Tic Tac Toe Game</h1>
+      <h1>Welcome to the Tic Tac Toe Game</h1><button onClick={() => { setAdat(["", "", "", "", "", "", "", "", ""]); setLepes(0); }}>Új játék</button>
     </header>
       <Tabla tabla={adat} kattintas ={kattintas} />
+      <JatekAllas lepes={lepes} />
     </main>
     </>
   )

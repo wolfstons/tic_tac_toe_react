@@ -1,26 +1,35 @@
-html{
+html {
   text-align: center;
   padding: auto;
   background-color: #2c2525;
 }
-header {
+header,
+.allas {
   text-align: center;
   padding: auto;
   color: #dbdbdb;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
-.mezo{
+.mezo {
   border: 2px solid #dbdbdb;
   border-radius: 10px;
+  font-size: 30px;
+}
+button {
+  background-color: #dbdbdb;
+  border: 2px solid #dbdbdb;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
 }
 
-
-.tabla{
+.tabla {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
   margin: 0 auto;
   padding-top: 30px;
+  font-size: 30px;
 }
