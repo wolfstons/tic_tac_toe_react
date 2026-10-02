@@ -1,0 +1,26 @@
+html{
+  text-align: center;
+  padding: auto;
+  background-color: #2c2525;
+}
+header {
+  text-align: center;
+  padding: auto;
+  color: #dbdbdb;
+  font-family: 'Courier New', Courier, monospace;
+}
+.mezo{
+  border: 2px solid #dbdbdb;
+  border-radius: 10px;
+}
+
+
+.tabla{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
