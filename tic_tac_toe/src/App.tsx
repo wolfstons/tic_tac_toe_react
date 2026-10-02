@@ -2,10 +2,7 @@ import Tabla from './component/Tabla'
 import { useState } from 'react'
 
 import './App.css'
-interface tablaProps {
-  tabla: string[];
-  onClick: (index: number) => void;
-}
+
 
 function App() {
   const [adat,setAdat]=useState(["", "", "", "", "", "", "", "", ""])
@@ -15,16 +12,20 @@ function App() {
 
 
   function kattintas(index: number) {
-    console.log(index)
-    if (lepes % 2 === 0) {
-      setAdat(adat[index]="X")
+  if (adat[index] !== "") {
+    return
+  }
 
-     /*  setAdat(); */
-    }else{
-      setAdat(adat[index]="O")
-    }
-    setLepes(lepes+1)
+  const ujAdat = [...adat]
 
+  if (lepes % 2 === 0) {
+    ujAdat[index] = "X"
+  } else {
+    ujAdat[index] = "O"
+  }
+
+  setAdat(ujAdat)
+  setLepes(lepes + 1)
 }
   return (
     <>    
